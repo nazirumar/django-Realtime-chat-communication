@@ -1,0 +1,10 @@
+{% extends 'core/base.html' %}
+{% block content %}
+<h1 class="text-2xl">Edit User</h1>
+
+<form action="" method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit" class=" mt-6 py-2 px-6 bg-rose-600 text-white rounded-xl"> Save changes</button>
+</form>
+{% endblock %}
